@@ -72,9 +72,7 @@ function handleItemCheckClicked() {
 }
 
 function getItemIndex(itemID) {
-  let itemToDelete = STORE.find((item) => item.id === itemID);
-  let itemDeleteIndex = STORE.indexOf(itemToDelete);
-
+  let itemDeleteIndex = STORE.findIndex((item) => item.id === itemID);
   return itemDeleteIndex;
 }
 
